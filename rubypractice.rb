@@ -68,3 +68,34 @@ def mask_article(in_str,arr_str)
     end
     return input_string
 end
+
+#------------------------------------------]
+#Enumeration
+def iterate_colors(colors)
+  # Your code here
+    colors_array = []
+    colors.each do |color|
+        colors_array.push(color)
+    end
+    colors_array
+end
+#--------------------------------
+
+def skip_animals(animals, skip)
+  # Your code here
+    new_array = []
+    animals.each_with_index do |animal|
+        new_array.push(animals.index(animal).to_s + ':' + "#{animal}") if animals.index(animal) >= skip
+    end
+    new_array
+end
+
+def skip_animals(animals, skip)
+  # Your code here
+    new_array = []
+    animals.each_with_index do |animal,index|
+        new_array.push(index.to_s + ':' + "#{animal}") if index >= skip
+    end
+    new_array
+end
+#=======================
