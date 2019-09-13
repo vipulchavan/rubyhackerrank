@@ -1,0 +1,26 @@
+IO is class in ruby which we can use to initialize streams.
+STDIN,STDOUT,STDERR are constants and are objects of IO class.
+0,1,2 are file_no for STDIN,STDOUT and STDERR respectively.
+$stdin,$stdout and $stderr are global variables of kernel module.
+They points to same object where STDIN ,STDOUT and STDERR points.
+these objects points to input stream, output stream and error stream
+
+Array
+create: arr =[], arr = %w(), arr = Array.new
+access the elements in arry: arr[i], arr[-i]-->from last, arr.first, arr.last, arr.take(n), arr.drop(n)
+insert elements: arr.push()-->one or more element at the end, arr.insert()-->one or many , arr << 
+deletion element: arr.pop--.from end ,arr.shift-->from beginning,arr.delete_at(index),arr.delete(element)-->all occurence of element
+selection:          non-destructive(no change in origin array):(arr.select {|a| condition}, arr.reject{|a| condition}, arr.drop_while {|a| condition is        true},)             
+Destructive: arr.delete_if {|a| condition}, arr.keep_if{|a| condition}
+
+String:
+encoding:
+def serial_average(serial)
+    avg = ((serial[4,5].to_f + serial[10,5].to_f) / 2.0).round(2)  
+    return serial[0,3] + "-" + "%0.2f" % [avg]
+end
+
+String methods:
+1)chomp
+2)strip
+3)chop
