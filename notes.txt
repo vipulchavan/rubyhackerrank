@@ -24,3 +24,5 @@ String methods:
 1)chomp
 2)strip
 3)chop
+4)include
+5)gsub
