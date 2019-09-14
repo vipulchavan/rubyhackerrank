@@ -92,7 +92,7 @@ end
 
 def skip_animals(animals, skip)
   # Your code here
-    new_array = []
+    new_array = []s
     animals.each_with_index do |animal,index|
         new_array.push(index.to_s + ':' + "#{animal}") if index >= skip
     end
