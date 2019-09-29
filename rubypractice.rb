@@ -99,3 +99,51 @@ def skip_animals(animals, skip)
     new_array
 end
 #=======================
+
+#creation of String
+#Using New
+empty_str = String.new
+p empty_str
+str = String.new('vipul')
+puts str
+#Accessing elements from String
+puts str[-1]
+puts str[2]
+puts str[0,3]
+puts str[1..4]
+puts str[/[aeiou]/].length
+
+str = 'vipul vitthal chavan'
+puts str.index('c')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
